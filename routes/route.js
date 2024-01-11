@@ -1,7 +1,8 @@
 const router = require('express').Router();
+const {
+    getAllAnime,
+} = require('../controllers/controller');
 
-router.get('/', (req, res) => {
-    res.send('<h1>Hi Server!</h1>');
-})
+router.get('/', getAllAnime);
 
 module.exports = router;
